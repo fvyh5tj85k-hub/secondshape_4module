@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин — Второе дыхание</title>
+    <link rel="stylesheet" href="stylesheets/style.css?v=28" />
+    <script defer src="javascripts /scripts.js?v=4"></script>
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <a class="header__logo" href="index.html" aria-label="Второе дыхание, на главную">
+                <img class="header__logo-image" src="images/logo-header.png" alt="Логотип Второе дыхание" />
+            </a>
+
+            <nav class="header__nav" aria-label="Главное меню">
+                <a class="header__link" href="index.html">главная</a>
+                <a class="header__link header__link--active" href="shop.html" aria-current="page">магазин</a>
+                <a class="header__link" href="game.html">игра</a>
+                <a class="header__link" href="cart.html">корзина</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="catalog" aria-label="Магазин">
+                <div class="catalog__grid">
+                    <article class="catalog-card" data-product-id="chair-second-yellow">
+                        <div class="catalog-card__media">
+                            <button class="catalog-card__cart-button" type="button" aria-label="Добавить в корзину" data-add-to-cart>
+                                <img class="catalog-card__cart" src="images/shop-cart-icon.png" alt="" aria-hidden="true" />
+                            </button>
+                            <img src="images/shop-card-1.png" alt="Стул second" />
+                        </div>
+                        <h2 class="catalog-card__title">СТУЛ SHAPE</h2>
+                        <p class="catalog-card__price">9 999 ₽</p>
+                    </article>
+
+                    <article class="catalog-card" data-product-id="table-second-purple">
+                        <div class="catalog-card__media">
+                            <button class="catalog-card__cart-button" type="button" aria-label="Добавить в корзину" data-add-to-cart>
+                                <img class="catalog-card__cart" src="images/shop-cart-icon.png" alt="" aria-hidden="true" />
+                            </button>
+                            <img src="images/shop-card-2.png" alt="Стол second" />
+                        </div>
+                        <h2 class="catalog-card__title">СТОЛ SHAPE</h2>
+                        <p class="catalog-card__price">9 999 ₽</p>
+                    </article>
+
+                    <article class="catalog-card" data-product-id="armchair-shape-orange">
+                        <div class="catalog-card__media">
+                            <button class="catalog-card__cart-button" type="button" aria-label="Добавить в корзину" data-add-to-cart>
+                                <img class="catalog-card__cart" src="images/shop-cart-icon.png" alt="" aria-hidden="true" />
+                            </button>
+                            <img src="images/shop-card-3.png" alt="Кресло shape" />
+                        </div>
+                        <h2 class="catalog-card__title">КРЕСЛО SHAPE</h2>
+                        <p class="catalog-card__price">9 999 ₽</p>
+                    </article>
+
+                    <article class="catalog-card" data-product-id="side-table-green">
+                        <div class="catalog-card__media">
+                            <button class="catalog-card__cart-button" type="button" aria-label="Добавить в корзину" data-add-to-cart>
+                                <img class="catalog-card__cart" src="images/shop-cart-icon.png" alt="" aria-hidden="true" />
+                            </button>
+                            <img src="images/shop-card-4.png" alt="Столик SS" />
+                        </div>
+                        <h2 class="catalog-card__title">СТОЛИК SS</h2>
+                        <p class="catalog-card__price">9 999 ₽</p>
+                    </article>
+
+                    <article class="catalog-card" data-product-id="chair-second-blue">
+                        <div class="catalog-card__media">
+                            <button class="catalog-card__cart-button" type="button" aria-label="Добавить в корзину" data-add-to-cart>
+                                <img class="catalog-card__cart" src="images/shop-cart-icon.png" alt="" aria-hidden="true" />
+                            </button>
+                            <img src="images/shop-card-5.png" alt="Стул second" />
+                        </div>
+                        <h2 class="catalog-card__title">СТУЛ SECOND</h2>
+                        <p class="catalog-card__price">9 999 ₽</p>
+                    </article>
+
+                    <article class="catalog-card" data-product-id="table-second-pink">
+                        <div class="catalog-card__media">
+                            <button class="catalog-card__cart-button" type="button" aria-label="Добавить в корзину" data-add-to-cart>
+                                <img class="catalog-card__cart" src="images/shop-cart-icon.png" alt="" aria-hidden="true" />
+                            </button>
+                            <img src="images/shop-card-6.png" alt="Стол second" />
+                        </div>
+                        <h2 class="catalog-card__title">СТОЛ SECOND</h2>
+                        <p class="catalog-card__price">9 999 ₽</p>
+                    </article>
+
+                    <article class="catalog-card" data-product-id="shelf-shape-purple">
+                        <div class="catalog-card__media">
+                            <button class="catalog-card__cart-button" type="button" aria-label="Добавить в корзину" data-add-to-cart>
+                                <img class="catalog-card__cart" src="images/shop-cart-icon.png" alt="" aria-hidden="true" />
+                            </button>
+                            <img src="images/shop-card-7.png" alt="Полка shape" />
+                        </div>
+                        <h2 class="catalog-card__title">ПОЛКА SHAPE</h2>
+                        <p class="catalog-card__price">9 999 ₽</p>
+                    </article>
+
+                    <article class="catalog-card" data-product-id="chair-ss-yellow">
+                        <div class="catalog-card__media">
+                            <button class="catalog-card__cart-button" type="button" aria-label="Добавить в корзину" data-add-to-cart>
+                                <img class="catalog-card__cart" src="images/shop-cart-icon.png" alt="" aria-hidden="true" />
+                            </button>
+                            <img src="images/shop-card-8.png" alt="Стул SS" />
+                        </div>
+                        <h2 class="catalog-card__title">СТУЛ SS</h2>
+                        <p class="catalog-card__price">9 999 ₽</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__meta">
+                <div class="footer__column">
+                    <h2>контакты:</h2>
+                    <a href="tel:+79826417356">+7 (982) 641-73-56</a>
+                    <a href="mailto:vdsurovneva@edu.hse.ru">vdsurovneva@edu.hse.ru</a>
+                </div>
+
+                <div class="footer__column">
+                    <h2>кураторы:</h2>
+                    <span>Цветников Николай</span>
+                    <span>Комкова Анна</span>
+                </div>
+            </div>
+
+            <div class="footer__branding">
+                <img class="footer__art" src="images/footer-artwork.png" alt="" aria-hidden="true" />
+                <div class="footer__title-block">
+                    <div class="footer__title">
+                        <span>второе</span>
+                        <span>дыхание</span>
+                    </div>
+                </div>
+            </div>
+
+            <img class="footer__mobile-image" src="images/footer-mobile-shared.png" alt="" aria-hidden="true" />
+        </footer>
+    </div>
+</body>
+</html>

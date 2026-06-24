@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Столик SS — Второе дыхание</title>
+    <link rel="stylesheet" href="stylesheets/style.css?v=28" />
+    <script defer src="javascripts /scripts.js?v=4"></script>
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <a class="header__logo" href="index.html" aria-label="Второе дыхание, на главную">
+                <img class="header__logo-image" src="images/logo-header.png" alt="Логотип Второе дыхание" />
+            </a>
+            <nav class="header__nav" aria-label="Главное меню">
+                <a class="header__link" href="index.html">главная</a>
+                <a class="header__link header__link--active" href="shop.html">магазин</a>
+                <a class="header__link" href="game.html">игра</a>
+                <a class="header__link" href="cart.html">корзина</a>
+            </nav>
+        </header>
+        <main>
+            <section class="product-page" data-detail-product-id="side-table-green">
+                <div class="product-page__layout">
+                    <div class="product-page__visual">
+                        <a class="product-page__back" href="shop.html" aria-label="Назад в магазин">
+                            <img src="images/product-back-arrow.png" alt="" aria-hidden="true" />
+                        </a>
+                        <img class="product-page__image" src="" alt="" data-detail-image />
+                    </div>
+                    <div class="product-page__content">
+                        <h1 class="product-page__title" data-detail-title></h1>
+                        <p class="product-page__description" data-detail-description></p>
+                        <p class="product-page__price" data-detail-price></p>
+                        <div class="product-page__controls">
+                            <button class="product-page__cart-button" type="button" data-detail-add>в корзину</button>
+                            <button class="product-page__favorite" type="button" aria-label="Добавить в избранное" data-detail-favorite>
+                                <img src="images/product-heart-outline.png" alt="" aria-hidden="true" />
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__meta">
+                <div class="footer__column">
+                    <h2>контакты:</h2>
+                    <a href="tel:+79826417356">+7 (982) 641-73-56</a>
+                    <a href="mailto:vdsurovneva@edu.hse.ru">vdsurovneva@edu.hse.ru</a>
+                </div>
+                <div class="footer__column">
+                    <h2>кураторы:</h2>
+                    <span>Цветников Николай</span>
+                    <span>Комкова Анна</span>
+                </div>
+            </div>
+            <div class="footer__branding">
+                <img class="footer__art" src="images/footer-artwork.png" alt="" aria-hidden="true" />
+                <div class="footer__title-block">
+                    <div class="footer__title">
+                        <span>второе</span>
+                        <span>дыхание</span>
+                    </div>
+                </div>
+            </div>
+
+            <img class="footer__mobile-image" src="images/footer-mobile-shared.png" alt="" aria-hidden="true" />
+        </footer>
+    </div>
+</body>
+</html>

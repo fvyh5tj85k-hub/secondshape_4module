@@ -1,13 +1,250 @@
 <!DOCTYPE html>
-<html lang="rus">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Second Shape</title>
-    <link rel="stylesheet" href="stylesheets/style.css" />
-     <script defer src="javascripts/scripts.js"></script>
+    <title>Второе дыхание</title>
+    <link rel="stylesheet" href="stylesheets/style.css?v=28" />
+    <script defer src="javascripts /scripts.js?v=4"></script>
 </head>
-<body>
-    
+<body class="page-home">
+    <div class="page">
+        <header class="header">
+            <button class="header__menu-button" type="button" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <a class="header__logo" href="index.html" aria-label="Второе дыхание, на главную">
+                <img class="header__logo-image" src="images/logo-header.png" alt="Логотип Второе дыхание" />
+            </a>
+
+            <nav class="header__nav" aria-label="Главное меню">
+                <a class="header__link header__link--active" href="index.html" aria-current="page">главная</a>
+                <a class="header__link" href="shop.html">магазин</a>
+                <a class="header__link" href="game.html">игра</a>
+                <a class="header__link" href="cart.html">корзина</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero" aria-label="Коллекция мебели">
+                <img class="hero__background" src="images/hero-background.png" alt="" aria-hidden="true" />
+
+                <div class="hero__mobile-scene" aria-hidden="true">
+                    <button class="hero__mobile-item hero__mobile-item--orange-chair" type="button" aria-label="Оранжевый стул">
+                        <img src="images/home-mobile-orange-chair.png" alt="" />
+                        <img class="hero__mobile-detail" src="images/home-mobile-detail-orange-chair.png" alt="" />
+                    </button>
+
+                    <button class="hero__mobile-item hero__mobile-item--purple-table" type="button" aria-label="Фиолетовый стол">
+                        <img src="images/home-mobile-purple-table.png" alt="" />
+                        <img class="hero__mobile-detail" src="images/home-mobile-detail-purple-table.png" alt="" />
+                    </button>
+
+                    <button class="hero__mobile-item hero__mobile-item--yellow-shelf" type="button" aria-label="Желтая тумба">
+                        <img src="images/home-mobile-yellow-shelf.png" alt="" />
+                        <img class="hero__mobile-detail" src="images/home-mobile-detail-yellow-shelf.png" alt="" />
+                    </button>
+
+                    <button class="hero__mobile-item hero__mobile-item--green-table" type="button" aria-label="Зеленый столик">
+                        <img src="images/home-mobile-green-table.png" alt="" />
+                        <img class="hero__mobile-detail" src="images/home-mobile-detail-green-table.png" alt="" />
+                    </button>
+
+                    <button class="hero__mobile-item hero__mobile-item--yellow-chair" type="button" aria-label="Желтый стул">
+                        <img src="images/home-mobile-yellow-chair.png" alt="" />
+                        <img class="hero__mobile-detail" src="images/home-mobile-detail-yellow-chair.png" alt="" />
+                    </button>
+
+                    <button class="hero__mobile-item hero__mobile-item--pink-table" type="button" aria-label="Розовый стол">
+                        <img src="images/home-mobile-pink-table.png" alt="" />
+                        <img class="hero__mobile-detail" src="images/home-mobile-detail-pink-table.png" alt="" />
+                    </button>
+
+                    <button class="hero__mobile-item hero__mobile-item--purple-chair" type="button" aria-label="Фиолетовый стул">
+                        <img src="images/home-mobile-purple-chair.png" alt="" />
+                        <img class="hero__mobile-detail" src="images/home-mobile-detail-purple-chair.png" alt="" />
+                    </button>
+                </div>
+
+                <div class="hero-hotspot hero-hotspot--orange-chair" data-hotspot>
+                    <div class="hero-hotspot__sensor" aria-hidden="true"></div>
+                    <div class="hero-hotspot__shadow" aria-hidden="true"></div>
+                    <div class="hero-hotspot__visual" aria-hidden="true">
+                        <img class="hero-hotspot__base" src="images/highlight-orange-base.png" alt="" />
+                        <img class="hero-hotspot__hover-visual" src="images/highlight-orange-hover.png" alt="" />
+                    </div>
+                    <div class="hero-hotspot__detail" aria-hidden="true" style="left: 280px; top: 140px; width: 592px;">
+                        <img src="images/orange-chair-detail-v2.png" alt="стул second, цвет: оранжевый, цена: 9 999 ₽" />
+                    </div>
+                </div>
+
+                <div class="hero-hotspot hero-hotspot--purple-table" data-hotspot>
+                    <div class="hero-hotspot__sensor" aria-hidden="true"></div>
+                    <div class="hero-hotspot__shadow" aria-hidden="true"></div>
+                    <div class="hero-hotspot__visual" aria-hidden="true">
+                        <img class="hero-hotspot__base" src="images/highlight-purple-table-base.png" alt="" />
+                        <img class="hero-hotspot__hover-visual" src="images/highlight-purple-table-hover.png" alt="" />
+                    </div>
+                    <div class="hero-hotspot__detail" aria-hidden="true" style="left: 212px; top: 48px; width: 592px;">
+                        <img src="images/purple-table-detail-v2.png" alt="стол second, цвет: фиолетовый, цена: 9 999 ₽" />
+                    </div>
+                </div>
+
+                <div class="hero-hotspot hero-hotspot--yellow-shelf" data-hotspot>
+                    <div class="hero-hotspot__sensor" aria-hidden="true"></div>
+                    <div class="hero-hotspot__shadow" aria-hidden="true"></div>
+                    <div class="hero-hotspot__visual" aria-hidden="true">
+                        <img class="hero-hotspot__base" src="images/highlight-shelf-base.png" alt="" />
+                        <img class="hero-hotspot__hover-visual" src="images/highlight-shelf-hover.png" alt="" />
+                    </div>
+                    <div class="hero-hotspot__detail" aria-hidden="true" style="left: 184px; top: 0px; width: 592px;">
+                        <img src="images/yellow-shelf-detail-v2.png" alt="стол second, цвет: фиолетовый, цена: 9 999 ₽" />
+                    </div>
+                </div>
+
+                <div class="hero-hotspot hero-hotspot--green-table" data-hotspot>
+                    <div class="hero-hotspot__sensor" aria-hidden="true"></div>
+                    <div class="hero-hotspot__shadow" aria-hidden="true"></div>
+                    <div class="hero-hotspot__visual" aria-hidden="true">
+                        <img class="hero-hotspot__base" src="images/highlight-green-base.png" alt="" />
+                        <img class="hero-hotspot__hover-visual" src="images/highlight-green-hover.png" alt="" />
+                    </div>
+                    <div class="hero-hotspot__detail" aria-hidden="true" style="left: -354px; top: 20px; width: 592px;">
+                        <img src="images/green-table-detail-v2.png" alt="стол second, цвет: розовый, цена: 9 999 ₽" />
+                    </div>
+                </div>
+
+                <div class="hero-hotspot hero-hotspot--yellow-chair" data-hotspot>
+                    <div class="hero-hotspot__sensor" aria-hidden="true"></div>
+                    <div class="hero-hotspot__shadow" aria-hidden="true"></div>
+                    <div class="hero-hotspot__visual" aria-hidden="true">
+                        <img class="hero-hotspot__base" src="images/highlight-yellow-base.png" alt="" />
+                        <img class="hero-hotspot__hover-visual" src="images/highlight-yellow-hover.png" alt="" />
+                    </div>
+                    <div class="hero-hotspot__detail" aria-hidden="true" style="left: 244px; top: 118px; width: 592px;">
+                        <img src="images/yellow-chair-detail-current.png" alt="стул second, цвет: жёлтый, цена: 9 999 ₽" />
+                    </div>
+                </div>
+
+                <div class="hero-hotspot hero-hotspot--pink-table" data-hotspot>
+                    <div class="hero-hotspot__sensor" aria-hidden="true"></div>
+                    <div class="hero-hotspot__shadow" aria-hidden="true"></div>
+                    <div class="hero-hotspot__visual" aria-hidden="true">
+                        <img class="hero-hotspot__base" src="images/highlight-pink-base.png" alt="" />
+                        <img class="hero-hotspot__hover-visual" src="images/highlight-pink-hover.png" alt="" />
+                    </div>
+                    <div class="hero-hotspot__detail" aria-hidden="true" style="left: 292px; top: 94px; width: 592px;">
+                        <img src="images/pink-table-detail-v2.png" alt="стол second, цвет: розовый, цена: 9 999 ₽" />
+                    </div>
+                </div>
+
+                <div class="hero-hotspot hero-hotspot--purple-chair" data-hotspot>
+                    <div class="hero-hotspot__sensor" aria-hidden="true"></div>
+                    <div class="hero-hotspot__shadow" aria-hidden="true"></div>
+                    <div class="hero-hotspot__visual" aria-hidden="true">
+                        <img class="hero-hotspot__base" src="images/highlight-purple-chair-base.png" alt="" />
+                        <img class="hero-hotspot__hover-visual" src="images/highlight-purple-chair-hover.png" alt="" />
+                    </div>
+                    <div class="hero-hotspot__detail" aria-hidden="true" style="left: -330px; top: 72px; width: 592px;">
+                        <img src="images/purple-chair-detail-v2.png" alt="стол second, цвет: розовый, цена: 9 999 ₽" />
+                    </div>
+                </div>
+            </section>
+
+            <section class="story">
+                <div class="story__layout">
+                    <div class="story__content">
+                        <p class="story__lead">
+                            Мы создаем уникальные элементы декора специально для всех,
+                            кому не безразлична судьба нашей планеты и важны тренды.
+                        </p>
+
+                        <img class="story__vector-mobile" src="images/home-mobile-building.png" alt="" aria-hidden="true" />
+
+                        <div class="story__text-block">
+                            <img class="story__label-mobile" src="images/home-mobile-label.png" alt="second shape, второе дыхание" />
+                            <div class="story__label">
+                                <span class="story__label-latin">second shape</span>
+                                <span class="story__label-arrows" aria-hidden="true">
+                                    <img src="images/story-arrow.png" alt="" />
+                                    <img src="images/story-arrow.png" alt="" />
+                                </span>
+                                <span class="story__label-cyrillic">второе дыхание</span>
+                            </div>
+                            <h1 class="story__title">recycle</h1>
+                        </div>
+                    </div>
+
+                    <img class="story__vector" src="images/story-building.png" alt="" aria-hidden="true" />
+                </div>
+
+                <div class="product-strip" aria-label="Подборка товаров">
+                    <article class="product-card product-card--orange">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="images/home-mobile-card-1.png" />
+                            <img src="images/card-table-purple.png" alt="Стол на оранжевом фоне" />
+                        </picture>
+                    </article>
+                    <article class="product-card product-card--blue">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="images/home-mobile-card-2.png" />
+                            <img src="images/card-table-green.png" alt="Столик на синем фоне" />
+                        </picture>
+                    </article>
+                    <article class="product-card product-card--pink">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="images/home-mobile-card-3.png" />
+                            <img src="images/card-chair-yellow.png" alt="Стул на розовом фоне" />
+                        </picture>
+                    </article>
+                    <article class="product-card product-card--green">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="images/home-mobile-card-4.png" />
+                            <img src="images/card-table-pink.png" alt="Стол на зелёном фоне" />
+                        </picture>
+                    </article>
+                    <article class="product-card product-card--violet">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="images/home-mobile-card-5.png" />
+                            <img src="images/card-chair-orange.png" alt="Стул на фиолетовом фоне" />
+                        </picture>
+                    </article>
+                </div>
+
+                <a class="cta-button" href="shop.html">добавить в корзину →</a>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__meta">
+                <div class="footer__column">
+                    <h2>контакты:</h2>
+                    <a href="tel:+79826417356">+7 (982) 641-73-56</a>
+                    <a href="mailto:vdsurovneva@edu.hse.ru">vdsurovneva@edu.hse.ru</a>
+                </div>
+
+                <div class="footer__column">
+                    <h2>кураторы:</h2>
+                    <span>Цветников Николай</span>
+                    <span>Комкова Анна</span>
+                </div>
+            </div>
+
+            <div class="footer__branding">
+                <img class="footer__art" src="images/footer-artwork.png" alt="" aria-hidden="true" />
+                <div class="footer__title-block">
+                    <div class="footer__title">
+                        <span>второе</span>
+                        <span>дыхание</span>
+                    </div>
+                </div>
+            </div>
+
+            <img class="footer__mobile-image" src="images/footer-mobile-shared.png" alt="" aria-hidden="true" />
+        </footer>
+    </div>
 </body>
 </html>

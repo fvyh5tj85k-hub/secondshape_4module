@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Игра — Второе дыхание</title>
+    <link rel="stylesheet" href="stylesheets/style.css?v=28" />
+    <script defer src="javascripts /scripts.js?v=4"></script>
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <a class="header__logo" href="index.html" aria-label="Второе дыхание, на главную">
+                <img class="header__logo-image" src="images/logo-header.png" alt="Логотип Второе дыхание" />
+            </a>
+
+            <nav class="header__nav" aria-label="Главное меню">
+                <a class="header__link" href="index.html">главная</a>
+                <a class="header__link" href="shop.html">магазин</a>
+                <a class="header__link header__link--active" href="game.html" aria-current="page">игра</a>
+                <a class="header__link" href="cart.html">корзина</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="game-page" aria-label="Собери свою бутылку">
+                <div class="game-page__workspace">
+                    <div class="game-page__palette" data-game-palette>
+                        <button class="game-page__piece game-page__piece--blue" type="button" aria-label="Первая бутылка" data-game-piece="0">
+                            <img src="images/game-bottle-1.png" alt="" aria-hidden="true" />
+                        </button>
+                        <button class="game-page__piece game-page__piece--pink" type="button" aria-label="Вторая бутылка" data-game-piece="1">
+                            <img src="images/game-bottle-2.png" alt="" aria-hidden="true" />
+                        </button>
+                        <button class="game-page__piece game-page__piece--lime" type="button" aria-label="Третья бутылка" data-game-piece="2">
+                            <img src="images/game-bottle-3.png" alt="" aria-hidden="true" />
+                        </button>
+                        <button class="game-page__piece game-page__piece--yellow" type="button" aria-label="Четвертая бутылка" data-game-piece="3">
+                            <img src="images/game-bottle-4.png" alt="" aria-hidden="true" />
+                        </button>
+                    </div>
+
+                    <div class="game-page__board-wrap">
+                        <img class="game-page__sticker" src="images/game-sticker.png" alt="собери свою бутылку!" />
+                        <img class="game-page__board" src="images/game-board.png" alt="" aria-hidden="true" />
+                        <div class="game-page__composition" data-game-board>
+                            <img class="game-page__main-bottle" src="" alt="" data-game-bottle />
+                        </div>
+                        <button class="game-page__reset" type="button" aria-label="Сбросить результат" data-game-reset>
+                            <img src="images/game-reset.png" alt="сброс" />
+                        </button>
+                    </div>
+                </div>
+
+                <div class="game-page__namebar" data-namebar>
+                    <img class="game-page__name-icon" src="images/game-namebar-bottle.png" alt="" aria-hidden="true" />
+                    <input
+                        class="game-page__name-input"
+                        type="text"
+                        placeholder="придумай название"
+                        aria-label="Придумай название бутылки"
+                        data-name-input
+                    />
+                    <button class="game-page__confirm" type="button" aria-label="Завершить результат" data-game-confirm>
+                        <img src="images/game-check.png" alt="" aria-hidden="true" />
+                    </button>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__meta">
+                <div class="footer__column">
+                    <h2>контакты:</h2>
+                    <a href="tel:+79826417356">+7 (982) 641-73-56</a>
+                    <a href="mailto:vdsurovneva@edu.hse.ru">vdsurovneva@edu.hse.ru</a>
+                </div>
+
+                <div class="footer__column">
+                    <h2>кураторы:</h2>
+                    <span>Цветников Николай</span>
+                    <span>Комкова Анна</span>
+                </div>
+            </div>
+
+            <div class="footer__branding">
+                <img class="footer__art" src="images/footer-artwork.png" alt="" aria-hidden="true" />
+                <div class="footer__title-block">
+                    <div class="footer__title">
+                        <span>второе</span>
+                        <span>дыхание</span>
+                    </div>
+                </div>
+            </div>
+
+            <img class="footer__mobile-image" src="images/footer-mobile-shared.png" alt="" aria-hidden="true" />
+        </footer>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина — Второе дыхание</title>
+    <link rel="stylesheet" href="stylesheets/style.css?v=28" />
+    <script defer src="javascripts /scripts.js?v=4"></script>
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <a class="header__logo" href="index.html" aria-label="Второе дыхание, на главную">
+                <img class="header__logo-image" src="images/logo-header.png" alt="Логотип Второе дыхание" />
+            </a>
+
+            <nav class="header__nav" aria-label="Главное меню">
+                <a class="header__link" href="index.html">главная</a>
+                <a class="header__link" href="shop.html">магазин</a>
+                <a class="header__link" href="game.html">игра</a>
+                <a class="header__link header__link--active" href="cart.html" aria-current="page">корзина</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="cart-page" aria-label="Корзина">
+                <div class="cart-page__list" data-cart-list></div>
+                <template id="cart-item-template">
+                    <article class="cart-page__item" data-cart-item>
+                        <img class="cart-page__media" src="" alt="" data-cart-image />
+                        <h2 class="cart-page__name" data-cart-title></h2>
+                        <p class="cart-page__price" data-cart-price></p>
+
+                        <div class="cart-page__side">
+                            <div class="cart-page__quantity" aria-label="Количество">
+                                <button class="cart-page__quantity-button" type="button" aria-label="Уменьшить количество" data-cart-decrease>-</button>
+                                <span data-cart-quantity>1</span>
+                                <button class="cart-page__quantity-button" type="button" aria-label="Увеличить количество" data-cart-increase>+</button>
+                            </div>
+
+                            <div class="cart-page__actions" aria-label="Действия с товаром">
+                                <button class="cart-page__icon cart-page__favorite" type="button" aria-label="Добавить в избранное" data-cart-favorite>
+                                    <img src="images/cart-heart-outline.png" alt="" aria-hidden="true" />
+                                </button>
+                                <button class="cart-page__icon cart-page__icon--trash" type="button" aria-label="Удалить товар" data-cart-remove>
+                                    <img src="images/cart-trash.png" alt="" aria-hidden="true" />
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </template>
+                <div class="cart-page__empty" data-cart-empty hidden>
+                    <img class="cart-page__empty-art" src="images/cart-empty-art.png" alt="" aria-hidden="true" />
+                    <p class="cart-page__empty-text">корзина пуста</p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__meta">
+                <div class="footer__column">
+                    <h2>контакты:</h2>
+                    <a href="tel:+79826417356">+7 (982) 641-73-56</a>
+                    <a href="mailto:vdsurovneva@edu.hse.ru">vdsurovneva@edu.hse.ru</a>
+                </div>
+
+                <div class="footer__column">
+                    <h2>кураторы:</h2>
+                    <span>Цветников Николай</span>
+                    <span>Комкова Анна</span>
+                </div>
+            </div>
+
+            <div class="footer__branding">
+                <img class="footer__art" src="images/footer-artwork.png" alt="" aria-hidden="true" />
+                <div class="footer__title-block">
+                    <div class="footer__title">
+                        <span>второе</span>
+                        <span>дыхание</span>
+                    </div>
+                </div>
+            </div>
+
+            <img class="footer__mobile-image" src="images/footer-mobile-shared.png" alt="" aria-hidden="true" />
+        </footer>
+    </div>
+</body>
+</html>
